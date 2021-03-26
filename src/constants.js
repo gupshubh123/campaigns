@@ -1,0 +1,1 @@
+export const FETCH_CAMPAIGN_LIST = "https://api.mocki.io/v1/204aa58f"

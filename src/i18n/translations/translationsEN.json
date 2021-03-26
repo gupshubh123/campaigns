@@ -1,0 +1,22 @@
+{
+    "MANAGE_CAMPAIGN": "Manage Campaign",
+    "EVENT_SUCCESSFULLY_RESCHEDULED":"Event Successfully Rescheduled!",
+    "CHANGE_LANGUAGE":"Language",
+    "UPCOMING_CAMPAIGN": "Upcoming Campaign",
+    "LIVE_CAMPAIGN": "Live Campaign",
+    "PAST_CAMPAIGN": "Past Campaign",
+    "DATE":"DATE",
+    "CAMPAIGN":"CAMPAIGN",
+    "VIEW":"VIEW",
+    "ACTIONS":"ACTIONS",
+    "DAYS_AHEAD":"days ahead",
+    "DAYS_AGO":"days ago",
+    "VIEW_PRICING": "View Pricing",
+    "REPORT":"Report",
+    "SCHEDULE_AGAIN":"Schedule Again",
+    "CSV":"CSV",
+    "PRICING":"Pricing",
+    "CLOSE":"Close",
+    "NO_EVENT_FOUND":"No event found !"
+    
+}

@@ -1,0 +1,326 @@
+.sectionHeading{
+    font-size: 3em;
+    color: #2b416c;
+    padding: 40px 5%;
+    font-weight: 700;
+  }
+  
+  .flexContainer{
+    display: flex;
+  }
+  
+  .campaignTypeMenu{
+    padding: 0px 5%;
+  }
+  .campaignType{
+    color:#556789;
+    font-size: 1.5em;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .activeCampaignTab{
+    border-bottom: 3px solid #83a515;
+    padding-bottom: 15px;
+    color: #83a515;
+  }
+  .colt1{
+   flex: 1
+  }
+  .colt2{
+    flex:2
+  }
+  .colt3{
+    flex:1.5
+  }
+  .colt4{
+    flex:4
+  }
+  .colItem{
+    padding: 10px 40px;
+    align-items: center;
+  }
+  .campaignTable{
+    box-shadow: 0px 2px 10px #f2f2f2;
+    margin:20px 5%;
+    overflow: auto;
+  }
+  .campaignTableHeader{
+    background: #f1f1f4;
+    padding: 2px 15px;
+    border: 1px solid #e4e4e4;
+  } 
+  .campaignTableHeader .colItem{ 
+    color: #556789;
+    font-weight: 600;
+  }
+  .campaignTableRowsContainer{
+    
+  }
+  .campaignTableRow{
+    border-bottom: 1px solid #efefef;
+    margin: 0 15px;
+    padding: 7px 0;
+  
+  }
+  .campaignTableRow:last-child{
+    border-bottom: none
+  
+  }
+  .dateItemContainer{
+  
+  }
+  .dateString{
+    color:#2b416c;
+  }
+  .dayDifference{
+    color:#99a5ba;
+    margin-top:5px;
+    font-size: 0.8em;
+    line-height: 24px;
+  }
+  .campaignNameContainer{
+  
+  }
+  .gameImg img{
+    width: 40px;
+  }
+  .gameName{
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 10px;
+  }
+  .gameName .name{
+    color:#2b416c;
+    position: relative;
+    top: -5px;
+  }
+  .gameName .region{
+    color:#99a5ba;
+    font-size: 0.8em;
+  }
+  .viewPriceContainer{
+    align-items: center;
+    color:#7788A3;
+    font-size: 0.9em;
+  }
+  .rowIcon img{
+   width: 24px;
+  
+  }
+  
+  .viewPriceContainer .label{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .actionContainer{
+  
+  }
+  .actionItem{
+    margin-right: 50px;
+    color:#7788A3;
+    font-size: 0.9em;
+  }
+  .actionItem span{
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+  .modalBodyHead{
+    align-items: flex-end;
+  }
+  .gameImgContainer img{
+    max-width: 137px;
+  }
+  .gameNameContainer{
+    margin-left:10px ;
+  }
+  .modalPricingLabel{
+      margin: 20px 0;
+      color: #2b416c;
+      font-size: 1.8em;
+      font-weight: 700;
+  }
+  .modalPricingValues{
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #969696;
+  }
+  .closePopup{
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 30px;
+      border: 2px solid black;
+  }
+  .modalPricingValues .duration{
+  
+  }
+  .modalPricingValues .actualPrice{
+    color: #2b416c;
+    font-weight: 600; 
+  }
+  .modal-footer-custom{
+    text-align: center;
+    padding: 20px;
+  }
+  .popupGameName{
+    color: #2b416c;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .popupRegionName{
+    color: #99a5ba;
+    margin-top:5px;
+  }
+  .react-datepicker__input-container input{
+    display: none;
+  }
+  .noEventFound{
+    height: 100%;
+    margin: 10px 5%;
+    text-align: center;
+    font-size: 1.8em;
+    color: #c14646;
+    border: 1px solid #d8d8d8;
+    padding: 30px;
+  }
+  .changeLanguageContainer{
+    position: relative;
+  }
+  .langBtn{
+    position: absolute;
+    right: 5%
+  }
+  .dropdown-item{
+    cursor: pointer;
+  }
+  
+  .datepickerbox{
+    position: relative;
+    left: -5%;
+  }
+  .react-datepicker{
+    right: 135px;
+  }
+  .react-datepicker__triangle{
+  display: none;
+  }
+  @media (min-width: 576px){
+    .modal-dialog {
+        max-width: 400px !important;
+     
+    }
+  }
+  @media (max-width: 769px){
+    .campaignTableRowsContainer, .campaignTableHeader{
+      width: 1100px;
+    }
+    .campaignTable{
+      max-width: 1100px;
+      overflow: scroll;
+    }
+    .langBtn{
+      top: -100px;
+    }
+    .dateString{
+      font-size: 0.9em;
+    }
+    .colItem{
+      padding: 10px;
+    }
+  }
+  @media (max-width: 600px){
+    :root{
+      font-size: 10px;
+    }
+    .gameName .name{
+      position: static;
+    }
+    .sectionHeading{
+      padding: 25px 5%;
+    }
+    .campaignType{
+      font-size: 1.2em;
+      margin-right: 6%;
+    }
+    .campaignTable{
+      max-width: 375px;
+      overflow: scroll;
+    }
+    .campaignTableRowsContainer, .campaignTableHeader{
+      width: 1100px;
+    }
+    .langBtn {
+      right: 4%;
+      top: 30px;
+    }
+    .rowIcon img{
+      width: 20px;
+    }
+    .custom-modal{
+      position: fixed;
+      top: 50% !important;
+      left: 50% !important;
+      z-index: 1050;
+      display: none;
+      width: 82% !important;
+      height: 100%;
+      overflow: hidden;
+      outline: 0;
+      margin: 0 auto;
+      transform: translate(-52%, -34%) !important;
+    }
+    .changeLanguageContainer{
+      position: static !important;
+    }
+    .dayDifference{
+      font-size: 1em;
+    }
+  }
+  
+  
+  /**
+  snackbar
+  */
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:#d4edda;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  /** end snack bar*/
