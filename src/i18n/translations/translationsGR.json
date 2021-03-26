@@ -1,0 +1,21 @@
+{
+    "MANAGE_CAMPAIGN": "Kampagne verwalten",
+    "EVENT_SUCCESSFULLY_RESCHEDULED":"Erfolgreich umgeplant!",
+    "CHANGE_LANGUAGE":"Sprache",
+    "UPCOMING_CAMPAIGN": "Kommende Kampagne",
+    "LIVE_CAMPAIGN": "Aktuelle Kampagne",
+    "PAST_CAMPAIGN": "Alte Kampagne",
+    "DATE":"Datum",
+    "CAMPAIGN":"Kampagne",
+    "VIEW":"Aussicht",
+    "ACTIONS":"AKTIONEN",
+    "DAYS_AHEAD":"tage voraus",
+    "DAYS_AGO":"vor tagen",
+    "VIEW_PRICING": "Preise anzeigen",
+    "REPORT":"Bericht",
+    "SCHEDULE_AGAIN":"Planen Sie erneut",
+    "CSV":"CSV",
+    "PRICING":"Preis",
+    "CLOSE":"schließen",
+    "NO_EVENT_FOUND":"Kein Ereignis gefunden !"
+}
