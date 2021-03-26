@@ -15,7 +15,8 @@ export class CampaignManagement extends Component {
         isSelectedTab:'upcoming',
         campaignData:[],
         activeClickedIndex:null,
-        startDate: new Date()
+        startDate: new Date(),
+        isDataLoaded: false
     }
     eventCategory={
         upcoming:[],
@@ -110,7 +111,8 @@ export class CampaignManagement extends Component {
         let activeListToDisplay = [...this.eventCategory[this.state.isSelectedTab]]
         return (
             <>  
-                
+            {this.state.isDataLoaded?    
+            <>
                 <div id="snackbar">
                     <Trans>EVENT_SUCCESSFULLY_RESCHEDULED</Trans>
                 </div>
@@ -294,15 +296,21 @@ export class CampaignManagement extends Component {
                         </div>
                     </div>
                 :null}
-                 
+            </>  
+            :
+            <div className="loader">
+                <img src={`${window.location.href}/assets/loader.gif`} alt="icon"/>
+            </div>}     
             </>
+            
         )
     }
     componentDidMount = async() => {
         let response = await fetch(FETCH_CAMPAIGN_LIST);
         let campaignData = await response.json()
         this.setState({
-            campaignData:campaignData.data
+            campaignData:campaignData.data,
+            isDataLoaded:true
         })
     }   
 }
