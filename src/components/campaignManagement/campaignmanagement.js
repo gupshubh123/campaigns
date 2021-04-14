@@ -306,8 +306,12 @@ export class CampaignManagement extends Component {
         )
     }
     componentDidMount = async() => {
-        let response = await fetch(FETCH_CAMPAIGN_LIST);
-        let campaignData = await response.json()
+        //let response = await fetch(FETCH_CAMPAIGN_LIST);
+        //let campaignData = await response.json()
+        /**
+         * api end point is not working anymore due to CORS error
+         */
+        let campaignData={...JSON.parse(JSON.stringify({"data":[{"name":"Summoners War","id":"1","region":"US","createdOn":1622745000000,"price":"100","csv":"Some CSV link for Whatsapp","report":"Some report link for Whatsapp","image_url":"img-1"},{"name":"Garena Free Fire","id":"2","region":"CA, FR","createdOn":1588530600000,"price":"150","csv":"Some CSV link for Super Jewels Quest","report":"Some report link for Super Jewels Ques","image_url":"img-2"},{"name":"Mortal Kombat","id":"3","region":"FR","createdOn":1585938600000,"price":"125","csv":"Some CSV link for Mole Slayer","report":"Some report link for Mole Slayer","image_url":"img-3"},{"name":"Auto Chess","id":"4","region":"JP","createdOn":1584642600000,"price":"145","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-4"},{"name":"Need For Speed","id":"5","region":"IN","createdOn":1616178600000,"price":"250","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-5"},{"name":"Shadow Fighter 3","id":"6","region":"UK","createdOn":1617215400000,"price":"400","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-6"},{"name":"Mancala Mix","id":"7","region":"PN","createdOn":1612463400000,"price":"30","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-7"},{"name":"Mancala Mix","id":"8","region":"US","createdOn":1617733800000,"price":"130","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-8"},{"name":"Mancala Mix","id":"9","region":"IN","createdOn":1617993000000,"price":"80","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-8"},{"name":"Mancala Mix","id":"10","region":"IR","createdOn":1618425000000,"price":"60","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-10"},{"name":"Mancala Mix","id":"11","region":"GB","createdOn":1614364200000,"price":"95","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-11"},{"name":"Mancala Mix","id":"12","region":"JP","createdOn":1619029800000,"price":"130","csv":"Some CSV link for Mancala Mix","report":"Some report link for Mancala Mix","image_url":"img-12"}]}))}
         this.setState({
             campaignData:campaignData.data,
             isDataLoaded:true
